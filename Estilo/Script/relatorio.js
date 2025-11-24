@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     renderTopMovimentosTable(data);
                     break;
                 case 'movimentos-recentes':
-                    data = await fetchData(`https://estoquemajor.vercel.app/api/resumo/movimentacoes`);
+                    data = await fetchData(`https://estoquemajor.duckdns.org/api/resumo/movimentacoes`);
                     renderTabelarecentes(data);
                     break;
                 default:
@@ -321,3 +321,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
 
 });
+

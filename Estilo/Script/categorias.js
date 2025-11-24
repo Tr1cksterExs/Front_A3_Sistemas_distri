@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURAÇÕES E SELETORES GLOBAIS ---
-    const API_BASE_URL = 'https://estoquemajor.duckdns.org/api';
+    const API_BASE_URL = 'http://127.0.0.1:8080/api';
 
     // Modais
     const modalAdicionar = document.getElementById('adicionar_categoria');

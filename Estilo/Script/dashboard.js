@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Define as URLs base da sua API.
-    const API_BASE_URL = 'https://estoquemajor.duckdns.org/api';
+    const API_BASE_URL = 'http://127.0.0.1:8080/api';
 
 
     async function carregarDadosDosCards() {
@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const dados = await response.json();
             
-        const cardTotal = document.getElementById('total-produtos'); // Provavelmente é este o ID no HTML
+        const cardTotal = document.getElementById('total-produtos');
         if (cardTotal) cardTotal.textContent = dados.totalProdutos;
 
-        const cardEstoque = document.getElementById('estoque-baixo'); // Provavelmente é este o ID no HTML
+        const cardEstoque = document.getElementById('estoque-baixo'); 
         if (cardEstoque) cardEstoque.textContent = dados.produtosEstoqueBaixo;
         
         } catch (error) {

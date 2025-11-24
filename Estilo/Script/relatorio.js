@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_BASE_URL = 'https://estoquemajor.duckdns.org/api/relatorios';
+    const API_BASE_URL = 'http://127.0.0.1:8080/api/relatorios';
 
     const reportSelect = document.getElementById('report-select');
     const btnGerar = document.getElementById('btn-gerar-relatorio');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     renderTopMovimentosTable(data);
                     break;
                 case 'movimentos-recentes':
-                    data = await fetchData(`https://estoquemajor.duckdns.org/api/resumo/movimentacoes`);
+                    data = await fetchData(`http://127.0.0.1:8080/api/resumo/movimentacoes`);
                     renderTabelarecentes(data);
                     break;
                 default:
@@ -319,6 +319,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initialize();
-
 });
-

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_BASE_URL = 'https://estoquemajor.duckdns.org/relatorios';
+    const API_BASE_URL = 'https://estoquemajor.duckdns.org/api/relatorios';
 
     const reportSelect = document.getElementById('report-select');
     const btnGerar = document.getElementById('btn-gerar-relatorio');
@@ -321,4 +321,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
 
 });
+
 
